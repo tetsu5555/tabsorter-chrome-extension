@@ -1,0 +1,29 @@
+{
+  "name": "tab-sorter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetsu5555/tabsorter-chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tetsu5555/tabsorter-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/tetsu5555/tabsorter-chrome-extension#readme",
+  "dependencies": {
+    "jquery": "^3.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
