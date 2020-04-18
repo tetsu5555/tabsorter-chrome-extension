@@ -7,9 +7,9 @@
     "tabs"
   ],
   "browser_action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup/popup.html",
     "default_icon": {
-      "128": "rust.png"
+      "128": "assets/rust.png"
     }
   },
   "content_scripts":[
@@ -18,13 +18,13 @@
         "http://example.com/"
       ],
       "js":[
-        "content.js"
+        "content/content.js"
       ]
     }
   ],
   "background": {
     "scripts": [
-      "background.js"
+      "background/background.js"
     ]
   }
 }
