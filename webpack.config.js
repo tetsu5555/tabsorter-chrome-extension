@@ -8,7 +8,7 @@ module.exports = {
     popup: "./popup.js"
   },
   output: {
-    path: path.resolve(__dirname, 'app'),
+    path: path.resolve(__dirname, 'dist'),
     filename: "[name].js"
   }
 }
