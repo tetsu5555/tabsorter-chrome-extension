@@ -9,6 +9,8 @@ const byAlphabeticalURLOrder = (tab1, tab2) => {
 }
 
 const describeResult = (tabs) => {
+  document.write(`現在開いているタブの数は${tabs.length}個です`)
+  
   document.write(`<h3>Tabs ordered as below:</h3>`);
   document.write('<ul>');
   tabs.forEach((tab) => {
