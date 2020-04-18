@@ -12,7 +12,6 @@ class Store {
 
   init() {
     this.fetchSites();
-    console.log("init!!", this.state.sites)
   }
 
   fetchSites() {
@@ -39,9 +38,7 @@ class Store {
   }
   
   setSiteSelected(site) {
-    console.log(site)
     this.state.siteSelected = site
-    console.log(this.state.siteSelected)
   }
 }
 

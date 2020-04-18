@@ -63,7 +63,6 @@ export default {
       this.store.addSite();
     },
     setSiteSelected(site) {
-      alert("setSiteSelected")
       this.store.setSiteSelected(site)
     }
   },
