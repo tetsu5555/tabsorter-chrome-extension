@@ -1,6 +1,7 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const { VueLoaderPlugin } = require('vue-loader');
+const ExtensionReloader = require('webpack-extension-reloader');
 
 module.exports = {
   mode: process.env.NODE_ENV || "development",
@@ -24,6 +25,9 @@ module.exports = {
       { from: "./popup/popup.css", to: "popup" },
       { from: "./manifest.json", to: "" },
     ]),
+    new ExtensionReloader({
+      manifest: __dirname + '/src/manifest.json',
+    }),
   ],
   resolve: {
     extensions: ['.js', '.vue']
