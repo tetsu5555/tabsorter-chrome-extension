@@ -1,8 +1,9 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  mode: process.env.NODE_ENV,
+  mode: process.env.NODE_ENV || "development",
   context: path.resolve(__dirname, "src"),
   entry: {
     "content/content": "./content/content.js",
@@ -16,6 +17,7 @@ module.exports = {
     filename: "[name].js"
   },
   plugins: [
+    new VueLoaderPlugin(),
     new CopyPlugin([
       { from: "assets", to: "assets" },
       { from: "./popup/popup.html", to: "popup" },
@@ -23,4 +25,22 @@ module.exports = {
       { from: "./manifest.json", to: "" },
     ]),
   ],
+  resolve: {
+    extensions: ['.js', '.vue']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        loaders: [
+          'vue-loader'
+        ],
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+      },
+    ]
+  }
 }
