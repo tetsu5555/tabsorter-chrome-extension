@@ -90,6 +90,13 @@ body {
 
 .input__header {
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.input__headericon {
+  margin-right: 8px;
+  font-size: 24px !important;
 }
 
 .input__body {
