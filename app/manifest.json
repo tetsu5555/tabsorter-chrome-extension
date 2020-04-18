@@ -11,5 +11,20 @@
     "default_icon": {
       "128": "rust.png"
     }
+  },
+  "content_scripts":[
+    {
+      "matches":[
+        "http://example.com/"
+      ],
+      "js":[
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
   }
 }
