@@ -1,0 +1,122 @@
+body {
+  width: 360px;
+  background: #F7F9F9;
+}
+
+/* shared! */
+.header {
+  border-bottom: 1px solid rgba(31, 45, 61, 0.55);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #555555;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btns {
+  padding: 20px 0;
+  margin: 0 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.memo__btn__save {
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  min-width: 32px;
+  color: #fff;
+  background: #00A676;
+  box-shadow: 0 0 0 1px rgba(0,16,14,0.03), 0 8px 16px -4px rgba(0,16,14,0.31);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn {
+  padding: 0 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 4px;
+  vertical-align: top;
+  flex: 0 0 auto;
+}
+
+
+/* memo */
+.memo__list {
+  font-size: 16px;
+  padding: 0;
+  margin: 0px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memo__item {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(31, 45, 61, 0.20);
+  padding-right: 16px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.material-icons {
+  font-size: 16px !important;
+  color: rgba(167, 109, 96, 0.54);
+}
+
+.memo__itemtext {
+  margin: auto 0;
+}
+
+
+/* Input */
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input__header {
+  margin-bottom: 12px;
+}
+
+.input__body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.input__textarea {
+  width: 95%;
+  font-size: 16px;
+  height: 328px;
+  padding: 16px;
+  background: rgba(224, 208, 193, 0.55);
+  border: 2px solid #E0D0C1;
+  box-sizing: border-box;
+}
+
+
+/* .sort {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.sort__header {
+  margin-right: 12px;
+} */

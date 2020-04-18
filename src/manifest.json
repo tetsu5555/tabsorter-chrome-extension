@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "description": "Rearrange your tabs by URL",
   "permissions": [
-    "tabs"
+    "tabs",
+    "contextMenus",
+    "activeTab",
+    "storage"
   ],
   "browser_action": {
     "default_popup": "popup/popup.html",
@@ -14,12 +17,8 @@
   },
   "content_scripts":[
     {
-      "matches":[
-        "http://example.com/"
-      ],
-      "js":[
-        "content/content.js"
-      ]
+      "matches": ["http://*/*", "https://*/*"],
+      "js":["content/content.js"]
     }
   ],
   "background": {
